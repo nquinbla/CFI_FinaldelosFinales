@@ -35,7 +35,7 @@ public class Main3 {
     private static void placeComponents(JPanel panel) {
         panel.add(createButtonPanel(), BorderLayout.WEST);
 
-        JPanel topPanel = new JPanel();
+        JPanel topPanel = new B_Decoración.CustomPanel(Color.DARK_GRAY);
         JTextField userText = new JTextField(20);
         JButton loadUserButton = new JButton("Cargar usuario");
         JButton sortButton = new JButton("Ordenar usuarios por email");
@@ -48,7 +48,7 @@ public class Main3 {
         JScrollPane scrollPane = new JScrollPane(resultArea);
         panel.add(scrollPane, BorderLayout.CENTER);
 
-        JPanel bottomPanel = new JPanel();
+        JPanel bottomPanel = new B_Decoración.CustomPanel(Color.DARK_GRAY);
         JTextField tweetText = new JTextField(20);
         JButton tweetButton = new JButton("Publicar tweet");
         bottomPanel.add(tweetText);
