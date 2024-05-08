@@ -35,79 +35,6 @@ public class Main3 {
     private static void placeComponents(JPanel panel) {
         panel.add(createButtonPanel(), BorderLayout.WEST);
 
-        // Panel para los botones de imagen
-        JPanel imageButtonPanel = new JPanel();
-        imageButtonPanel.setLayout(new BoxLayout(imageButtonPanel, BoxLayout.Y_AXIS));
-        imageButtonPanel.setBackground(Color.GRAY);
-
-        // Cargar las imágenes
-        ImageIcon icon1 = new ImageIcon(new ImageIcon("src/main/resources/hogar.png").getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT));
-        ImageIcon icon2 = new ImageIcon(new ImageIcon("src/main/resources/campana.png").getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT));
-        ImageIcon icon3 = new ImageIcon(new ImageIcon("src/main/resources/sobre.png").getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT));
-        ImageIcon icon4 = new ImageIcon(new ImageIcon("src/main/resources/usuario.png").getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT));
-
-        JButton button1 = new JButton(icon1); // botón de inicio
-        button1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Ya te encuentras en la página de inicio");
-            }
-        });
-
-        JButton button2 = new JButton(icon2); // botón de notificaciones
-        button2.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JFrame notificationsFrame = new JFrame("Notificaciones");
-                notificationsFrame.setSize(300, 200);
-                notificationsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-
-                notificationsFrame.setVisible(true);
-            }
-        });
-
-        JButton button3 = new JButton(icon3); // botón de mensajes
-        button3.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JFrame messagesFrame = new JFrame("Mensajes");
-                messagesFrame.setSize(300, 200);
-                messagesFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-
-                messagesFrame.setVisible(true);
-            }
-        });
-
-        JButton button4 = new JButton(icon4); // botón de perfil
-        button4.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JFrame profileFrame = new JFrame("Perfil");
-                profileFrame.setSize(300, 200);
-                profileFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-
-                profileFrame.setVisible(true);
-            }
-        });
-
-        Dimension buttonSize = new Dimension(50, 50);
-        button1.setPreferredSize(buttonSize);
-        button2.setPreferredSize(buttonSize);
-        button3.setPreferredSize(buttonSize);
-        button4.setPreferredSize(buttonSize);
-
-        // Añadir los botones al panel de botones de imagen
-        imageButtonPanel.add(button1);
-        imageButtonPanel.add(button2);
-        imageButtonPanel.add(button3);
-        imageButtonPanel.add(button4);
-
-        panel.add(imageButtonPanel, BorderLayout.WEST); // Añadir el panel de botones de imagen al panel principal
-        decoPanel decoPanel = new decoPanel();
-        decoPanel.setPreferredSize(new Dimension(2, decoPanel.getHeight()));
-        panel.add(decoPanel, BorderLayout.CENTER);
-
-
         JPanel topPanel = new JPanel();
         JTextField userText = new JTextField(20);
         JButton loadUserButton = new JButton("Cargar usuario");
@@ -169,6 +96,69 @@ public class Main3 {
                 }
             }
         });
+    }
+
+    private static JPanel createButtonPanel() {
+        JPanel imageButtonPanel = new JPanel();
+        imageButtonPanel.setLayout(new BoxLayout(imageButtonPanel, BoxLayout.Y_AXIS));
+        imageButtonPanel.setBackground(Color.GRAY);
+
+        // Cargar las imágenes
+        ImageIcon icon1 = new ImageIcon(new ImageIcon("src/main/resources/hogar.png").getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT));
+        ImageIcon icon2 = new ImageIcon(new ImageIcon("src/main/resources/campana.png").getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT));
+        ImageIcon icon3 = new ImageIcon(new ImageIcon("src/main/resources/sobre.png").getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT));
+        ImageIcon icon4 = new ImageIcon(new ImageIcon("src/main/resources/usuario.png").getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT));
+
+        JButton button1 = new JButton(icon1); // botón de inicio
+        button1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(null, "Ya te encuentras en la página de inicio");
+            }
+        });
+
+        JButton button2 = new JButton(icon2); // botón de notificaciones
+        button2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame notificationsFrame = new JFrame("Notificaciones");
+                notificationsFrame.setSize(300, 200);
+                notificationsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                notificationsFrame.add(createButtonPanel(), BorderLayout.WEST);
+                notificationsFrame.setVisible(true);
+            }
+        });
+
+        JButton button3 = new JButton(icon3); // botón de mensajes
+        button3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame messagesFrame = new JFrame("Mensajes");
+                messagesFrame.setSize(300, 200);
+                messagesFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                messagesFrame.add(createButtonPanel(), BorderLayout.WEST);
+                messagesFrame.setVisible(true);
+            }
+        });
+
+        JButton button4 = new JButton(icon4); // botón de perfil
+        button4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame profileFrame = new JFrame("Perfil");
+                profileFrame.setSize(300, 200);
+                profileFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                profileFrame.add(createButtonPanel(), BorderLayout.WEST);
+                profileFrame.setVisible(true);
+            }
+        });
+
+        imageButtonPanel.add(button1);
+        imageButtonPanel.add(button2);
+        imageButtonPanel.add(button3);
+        imageButtonPanel.add(button4);
+
+        return imageButtonPanel;
     }
 
     private static void cargarUsuarios() {
