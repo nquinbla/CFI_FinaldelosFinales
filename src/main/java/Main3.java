@@ -1,6 +1,7 @@
 import A_CuentaUsuario.Cuenta_Usuario;
 import A_CuentaUsuario.Tweet;
 import A_CuentaUsuario.Utils;
+import B_Decoración.decoPanel;
 
 import javax.swing.*;
 import java.awt.*;
@@ -51,6 +52,12 @@ public class Main3 {
         JButton button3 = new JButton(icon3);
         JButton button4 = new JButton(icon4);
 
+        Dimension buttonSize = new Dimension(100, 100);
+        button1.setPreferredSize(buttonSize);
+        button2.setPreferredSize(buttonSize);
+        button3.setPreferredSize(buttonSize);
+        button4.setPreferredSize(buttonSize);
+
         // Añadir los botones al panel de botones de imagen
         imageButtonPanel.add(button1);
         imageButtonPanel.add(button2);
@@ -58,10 +65,8 @@ public class Main3 {
         imageButtonPanel.add(button4);
 
         panel.add(imageButtonPanel, BorderLayout.WEST); // Añadir el panel de botones de imagen al panel principal
-
-        // Crear un separador vertical y añadirlo al panel principal
-        JSeparator separator = new JSeparator(JSeparator.VERTICAL);
-        panel.add(separator, BorderLayout.CENTER);
+        decoPanel decoPanel = new decoPanel();
+        panel.add(decoPanel, BorderLayout.CENTER);
 
 
         JPanel topPanel = new JPanel();
