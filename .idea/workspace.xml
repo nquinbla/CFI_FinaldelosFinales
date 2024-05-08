@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21b304ed-0e3f-422b-b91e-18a22c6f2739" name="Changes" comment="[A] main pt3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="21b304ed-0e3f-422b-b91e-18a22c6f2739" name="Changes" comment="[A] Cuenta Usuario arreglos" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +32,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.Main2.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -63,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715156494141</updated>
-      <workItem from="1715156495211" duration="2732000" />
+      <workItem from="1715156495211" duration="3067000" />
     </task>
     <task id="LOCAL-00001" summary="[A] Cuenta de Usuario (Cuenta_Usuario) código">
       <option name="closed" value="true" />
@@ -145,7 +143,31 @@
       <option name="project" value="LOCAL" />
       <updated>1715158726776</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="[A] main pt4">
+      <option name="closed" value="true" />
+      <created>1715159270827</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715159270827</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[A] main2 para probar">
+      <option name="closed" value="true" />
+      <created>1715159391794</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715159391794</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[A] Cuenta Usuario arreglos">
+      <option name="closed" value="true" />
+      <created>1715159457882</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1715159457882</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +183,9 @@
     <MESSAGE value="[A] main provisional" />
     <MESSAGE value="[A] main pt2" />
     <MESSAGE value="[A] main pt3" />
-    <option name="LAST_COMMIT_MESSAGE" value="[A] main pt3" />
+    <MESSAGE value="[A] main pt4" />
+    <MESSAGE value="[A] main2 para probar" />
+    <MESSAGE value="[A] Cuenta Usuario arreglos" />
+    <option name="LAST_COMMIT_MESSAGE" value="[A] Cuenta Usuario arreglos" />
   </component>
 </project>

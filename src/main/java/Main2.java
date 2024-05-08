@@ -23,39 +23,34 @@ public class Main2 {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500, 500);
 
-        JPanel panel = new JPanel();
+        JPanel panel = new JPanel(new BorderLayout());
         frame.add(panel);
+
         placeComponents(panel);
 
         frame.setVisible(true);
     }
 
     private static void placeComponents(JPanel panel) {
-        panel.setLayout(null);
-
-        JButton loadUserButton = new JButton("Cargar usuario");
-        loadUserButton.setBounds(10, 10, 160, 25);
-        panel.add(loadUserButton);
-
+        JPanel topPanel = new JPanel();
         JTextField userText = new JTextField(20);
-        userText.setBounds(180, 10, 160, 25);
-        panel.add(userText);
-
-        JButton tweetButton = new JButton("Publicar tweet");
-        tweetButton.setBounds(10, 40, 160, 25);
-        panel.add(tweetButton);
-
-        JTextField tweetText = new JTextField(20);
-        tweetText.setBounds(180, 40, 160, 25);
-        panel.add(tweetText);
-
+        JButton loadUserButton = new JButton("Cargar usuario");
         JButton sortButton = new JButton("Ordenar usuarios por email");
-        sortButton.setBounds(10, 70, 200, 25);
-        panel.add(sortButton);
+        topPanel.add(userText);
+        topPanel.add(loadUserButton);
+        topPanel.add(sortButton);
+        panel.add(topPanel, BorderLayout.NORTH);
 
         JTextArea resultArea = new JTextArea();
-        resultArea.setBounds(10, 100, 460, 350);
-        panel.add(resultArea);
+        JScrollPane scrollPane = new JScrollPane(resultArea);
+        panel.add(scrollPane, BorderLayout.CENTER);
+
+        JPanel bottomPanel = new JPanel();
+        JTextField tweetText = new JTextField(20);
+        JButton tweetButton = new JButton("Publicar tweet");
+        bottomPanel.add(tweetText);
+        bottomPanel.add(tweetButton);
+        panel.add(bottomPanel, BorderLayout.SOUTH);
 
         loadUserButton.addActionListener(new ActionListener() {
             @Override
