@@ -82,7 +82,7 @@ public class Main3 {
                     try {
                         Tweet tweet = new Tweet(mensaje, LocalDate.now(), currentUser);
                         currentUser.tweet(tweet);
-                        resultArea.append("Tweet publicado\n");
+                        resultArea.append("Tweet publicado: " + tweet.toString() + "\n");
                     } catch (IllegalArgumentException ex) {
                         resultArea.append("Error: " + ex.getMessage() + "\n");
                     }
