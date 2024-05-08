@@ -21,6 +21,7 @@ public class Main3 {
     public static void main(String[] args) {
         cargarUsuarios();
 
+
         JFrame frame = new JFrame("Twitter: Inicio");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800, 500);
@@ -32,6 +33,7 @@ public class Main3 {
 
         frame.setVisible(true);
     }
+
 
     private static void placeComponents(JPanel panel) {
         panel.add(createButtonPanel(), BorderLayout.WEST);
