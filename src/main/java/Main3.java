@@ -45,11 +45,49 @@ public class Main3 {
         ImageIcon icon3 = new ImageIcon(new ImageIcon("src/main/resources/sobre.png").getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT));
         ImageIcon icon4 = new ImageIcon(new ImageIcon("src/main/resources/usuario.png").getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT));
 
-        // Crear JButtons para las imágenes
-        JButton button1 = new JButton(icon1);
-        JButton button2 = new JButton(icon2);
-        JButton button3 = new JButton(icon3);
-        JButton button4 = new JButton(icon4);
+        JButton button1 = new JButton(icon1); // botón de inicio
+        button1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(null, "Ya te encuentras en la página de inicio");
+            }
+        });
+
+        JButton button2 = new JButton(icon2); // botón de notificaciones
+        button2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame notificationsFrame = new JFrame("Notificaciones");
+                notificationsFrame.setSize(300, 200);
+                notificationsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+
+                notificationsFrame.setVisible(true);
+            }
+        });
+
+        JButton button3 = new JButton(icon3); // botón de mensajes
+        button3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame messagesFrame = new JFrame("Mensajes");
+                messagesFrame.setSize(300, 200);
+                messagesFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+
+                messagesFrame.setVisible(true);
+            }
+        });
+
+        JButton button4 = new JButton(icon4); // botón de perfil
+        button4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame profileFrame = new JFrame("Perfil");
+                profileFrame.setSize(300, 200);
+                profileFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+
+                profileFrame.setVisible(true);
+            }
+        });
 
         Dimension buttonSize = new Dimension(50, 50);
         button1.setPreferredSize(buttonSize);
