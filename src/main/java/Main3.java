@@ -1,4 +1,5 @@
 import A_CuentaUsuario.Cuenta_Usuario;
+import A_CuentaUsuario.Mensaje_Directo;
 import A_CuentaUsuario.Tweet;
 import A_CuentaUsuario.Utils;
 import B_Decoración.decoPanel;
@@ -108,6 +109,7 @@ public class Main3 {
         ImageIcon icon2 = new ImageIcon(new ImageIcon("src/main/resources/campana.png").getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT));
         ImageIcon icon3 = new ImageIcon(new ImageIcon("src/main/resources/sobre.png").getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT));
         ImageIcon icon4 = new ImageIcon(new ImageIcon("src/main/resources/usuario.png").getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT));
+        ImageIcon icon5 = new ImageIcon(new ImageIcon("src/main/resources/buscar.png").getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT));
 
         JButton button1 = new JButton(icon1); // botón de inicio
         button1.addActionListener(new ActionListener() {
@@ -136,7 +138,32 @@ public class Main3 {
                 JFrame messagesFrame = new JFrame("Mensajes");
                 messagesFrame.setSize(300, 200);
                 messagesFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-                messagesFrame.add(createButtonPanel(), BorderLayout.WEST);
+
+                JPanel panel = new JPanel(new BorderLayout());
+                messagesFrame.add(panel);
+
+                JTextField messageText = new JTextField(20);
+                JTextField receiverText = new JTextField(20);
+                JButton sendButton = new JButton("Enviar mensaje");
+                panel.add(messageText, BorderLayout.NORTH);
+                panel.add(receiverText, BorderLayout.CENTER);
+                panel.add(sendButton, BorderLayout.SOUTH);
+
+                sendButton.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        String mensaje = messageText.getText();
+                        String receiverAlias = receiverText.getText();
+                        Cuenta_Usuario receiver = buscarUsuario(receiverAlias);
+                        if (receiver == null) {
+                            JOptionPane.showMessageDialog(null, "Usuario no encontrado");
+                        } else {
+                            Mensaje_Directo mensajeDirecto = new Mensaje_Directo(mensaje, LocalDate.now(), currentUser, receiver);
+                            JOptionPane.showMessageDialog(null, "Mensaje enviado: " + mensajeDirecto);
+                        }
+                    }
+                });
+
                 messagesFrame.setVisible(true);
             }
         });
@@ -153,10 +180,27 @@ public class Main3 {
             }
         });
 
+        JButton button5 = new JButton(icon5); // botón de búsqueda
+        button5.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String alias = JOptionPane.showInputDialog("Introduce el alias del usuario a buscar:");
+                Cuenta_Usuario usuarioBuscado = buscarUsuario(alias);
+                if (usuarioBuscado == null) {
+                    JOptionPane.showMessageDialog(null, "Usuario no encontrado");
+                } else {
+                    JOptionPane.showMessageDialog(null, "Usuario encontrado: " + usuarioBuscado);
+                }
+            }
+        });
+
+        imageButtonPanel.add(button5);
+
         imageButtonPanel.add(button1);
         imageButtonPanel.add(button2);
         imageButtonPanel.add(button3);
         imageButtonPanel.add(button4);
+        imageButtonPanel.add(button5);
 
         return imageButtonPanel;
     }
