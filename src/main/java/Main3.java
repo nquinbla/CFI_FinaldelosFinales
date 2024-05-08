@@ -207,11 +207,11 @@ public class Main3 {
     }
 
     private static void cargarUsuarios() {
-        usuarios.add(new Cuenta_Usuario("rubénelmejor", "ruben1@email.com"));
-        usuarios.add(new Cuenta_Usuario("nereaquintanilla_", "nquinbla@email.com"));
+        usuarios.add(new Cuenta_Usuario("rubenelmejor", "ruben1@email.com"));
+        usuarios.add(new Cuenta_Usuario("nereaquintanilla", "nquinbla@email.com"));
         usuarios.add(new Cuenta_Usuario("extremodurofan", "extremoduro@email.com"));
         usuarios.add(new Cuenta_Usuario("tartadequesolamejor", "tartaqueso@email.com"));
-        usuarios.add(new Cuenta_Usuario("rockconñ", "rockespañol@email.com"));
+        usuarios.add(new Cuenta_Usuario("rockcon", "rockespanol@email.com"));
     }
 
     private static Cuenta_Usuario buscarUsuario(String alias) {

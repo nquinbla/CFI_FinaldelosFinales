@@ -52,8 +52,8 @@ public class Cuenta_Usuario {
     @Override
     public String toString() {
         return "cuenta del usuario:" +
-                "alias:'" + alias + '\'' +
-                ", email:'" + email + '\'' +
+                "alias:" + alias + '\'' +
+                ", email:" + email + '\'' +
                 '}';
     }
 }
