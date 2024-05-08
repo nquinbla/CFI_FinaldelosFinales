@@ -12,7 +12,7 @@ LINK ->
 
 ## EJERCICIOS
 
-### EJERCICIO 1 (0.5 puntos)
+### [EJERCICIO 1] (0.5 puntos)
   1). -> b) Debemos establecer la visibilidad más restrictiva (por ejemplo, privada) en los atributos de una clase. Así, cualquier software que utilice nuestro objeto, sólo accederá al estado de los objetos mediante los métodos que le hayamos permitido utilizar.
 
   2). -> b) Falso
@@ -25,7 +25,7 @@ LINK ->
 
 ---
 
-### EJERCICIO 2 (2 puntos)
+### [EJERCICIO 2] (2 puntos)
 Escogo hacer los apartados 2, 3, 4 y 5 de los cinco proporcionados.
 
 #### 2). APARTADO 2
@@ -68,7 +68,7 @@ Escogo hacer los apartados 2, 3, 4 y 5 de los cinco proporcionados.
 
 ---
 
-### EJERCICIO 3 (0.75 + 0.75 puntos)
+### [EJERCICIO 3] (0.75 + 0.75 puntos)
   a) Si código se llegase a  ajecutar no imprimiría nada, esto pasa ya que el propio código se atasca en un ciclo que nunca termina dado que el segundo número que le introducimos,
   denominado b, siempre es negativo y nunca puede llegar a ser cero. Teniendo en cuenta esto, el código sigue llamando a la función recursiva con b que disminuye de uno en uno, y como
   hemos dicho antes, disminuirlo en uno lo sigue haciendonegativo, alejandolo del cero. Y como la función recursiva solo se detiene cuando b es cero, nunca deja de llamarse a sí misma,
@@ -84,7 +84,7 @@ Escogo hacer los apartados 2, 3, 4 y 5 de los cinco proporcionados.
 
 ---
 
-### EJERCICIO 4 (1.5 puntos)
+### [EJERCICIO 4] (1.5 puntos)
   Te lo resuelvo aquí y además también estará implemetado en una clase `Ejercicio_4':
 ```
 1  public class Ejercicio_4 {
@@ -109,7 +109,7 @@ Escogo hacer los apartados 2, 3, 4 y 5 de los cinco proporcionados.
 
 
 
-### EJERCICIO 5 (2.5 + 1.5 + 1 puntos)
+### [EJERCICIO 5] (2.5 + 1.5 + 1 puntos)
 
 #### [1] MÓDULO 1
 En la red social Twitter, cada usuario es propietario de una cuenta (UserAccount) en la que, básicamente, se especifica un alias (que cumple las funciones de identificador único) y un email de contacto. En la cuenta, además, se incluye el conjunto de tweets que el propietario va publicando a lo largo del tiempo.
@@ -129,6 +129,14 @@ contienenúmeros y/o letras. Programe una clase Utils que contenga funciones ind
       followers).
 
   d). Implemente el método toString que únicamente muestre el nombre de usuario y el correo electrónico.
+
+#### [2] MÓDULO 2
+En la red social Twitter, la unidad básica de información se denomina Tweet. Un Tweet es creado en un instante de tiempo concreto (time), contiene un mensaje (message) con un máximo de 140 caracteres de longitud y es publicado por un usuario (conocido como sender). Además, existen dos tipos de Tweet especiales:
+
+  - DirectMessage: Los mensajes directos son Tweets que permiten comunicarse, de manera privada, a dos usuarios dentro de la red. Estos DirectMessage son como Tweets ya que contienen un       mensaje (message), son publicados por un emisor (sender) y son creados en un instante de tiempo determinado (time); la única diferencia es que incluyen a otro usuario como receptor        (receiver) del tweet.
+  - Retweet: Cuando un usuario lee un tweet interesante que le ha llegado a su timeline, y quiere reenviarlo a su lista de followers, crea un retweet. Este Retweet es como un Tweet, es        decir, el usuario que lo publica (sender) puede poner un mensaje (message) y lo crea en un tiempo determinado (time); la única diferencia es que el Retweet incluye una referencia al       Tweet que se reenvía.
+
+En base a estas especificaciones se solicita que:
 
 
 
