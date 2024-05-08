@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21b304ed-0e3f-422b-b91e-18a22c6f2739" name="Changes" comment="[A] Cuenta Usuario arreglos" />
+    <list default="true" id="21b304ed-0e3f-422b-b91e-18a22c6f2739" name="Changes" comment="metemos cositas">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +49,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nerea\OneDrive\Documentos\GitHub\CFI_FinaldelosFinales\src\main\resources" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -61,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715156494141</updated>
-      <workItem from="1715156495211" duration="3067000" />
+      <workItem from="1715156495211" duration="3511000" />
     </task>
     <task id="LOCAL-00001" summary="[A] Cuenta de Usuario (Cuenta_Usuario) código">
       <option name="closed" value="true" />
@@ -167,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715159457882</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="metemos cositas">
+      <option name="closed" value="true" />
+      <created>1715159770235</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1715159770235</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +202,7 @@
     <MESSAGE value="[A] main pt4" />
     <MESSAGE value="[A] main2 para probar" />
     <MESSAGE value="[A] Cuenta Usuario arreglos" />
-    <option name="LAST_COMMIT_MESSAGE" value="[A] Cuenta Usuario arreglos" />
+    <MESSAGE value="metemos cositas" />
+    <option name="LAST_COMMIT_MESSAGE" value="metemos cositas" />
   </component>
 </project>
