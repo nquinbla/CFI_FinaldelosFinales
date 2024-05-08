@@ -107,7 +107,7 @@ Escogo hacer los apartados 2, 3, 4 y 5 de los cinco proporcionados.
   La complejidad computacional del algoritmo va creciendo de manera proporcional al número de dígitos de n. Por ejemplo, la función `sumOfDigits` recorre los dígitos del n y suma cada uno
   de ellos. La cantidad de llamadas recursivas esta determinada por el número de dígitos de n.
 
-
+---
 
 ### [EJERCICIO 5] (2.5 + 1.5 + 1 puntos)
 
