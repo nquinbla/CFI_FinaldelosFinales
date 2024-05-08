@@ -7,7 +7,7 @@ LINK -> https://github.com/nquinbla/CFI_FinaldelosFinales.git
 ## ÍNDICE
 
 - [EJERCICIOS](#ejercicios)
-  - [EJERCICIO 1](#ejercicio-1)
+  - [EJERCICIO 1 (0.5 puntos)](#ejercicio-1-(0.5-puntos))
   - [EJERCICIO 2](#ejercicio-2)
     - [APARTADO 2](#apartado-2)
     - [APARTADO 3](#apartado-3)
