@@ -111,6 +111,24 @@ Escogo hacer los apartados 2, 3, 4 y 5 de los cinco proporcionados.
 
 ### EJERCICIO 5 (2.5 + 1.5 + 1 puntos)
 
+#### [1] MÓDULO 1
+En la red social Twitter, cada usuario es propietario de una cuenta (UserAccount) en la que, básicamente, se especifica un alias (que cumple las funciones de identificador único) y un email de contacto. En la cuenta, además, se incluye el conjunto de tweets que el propietario va publicando a lo largo del tiempo.
+Como la cantidad de mensajes que maneja la red es inmensa, una característica original de Twitter es que cada usuario puede seleccionar la información que le interesa recibir. De esta manera, el propietario de una UserAccount puede convertirse en seguidor (follower) de otros usuarios, mostrando su interés en los tweets que ellos publiquen. Así, cada vez que un usuario publica un tweet, éste es incluido en el timeline de la UserAccount de cada uno de sus followers (es decir, el timeline se corresponde con el conjunto de tweets recibidos). Un usuario tiene también una lista de personas a las que sigue (following). En base a estas especificaciones se solicita que:
+
+  a). Programe la clase UserAccount y sus constructores. Incluya todos sus atributos. Al iniciar una cuenta el usuario no sigue a nadie, no tiene ningún tweet y el timeline está vacío. Establezca la visibilidad adecuada. Indica el tipo de datos de todos los atributos y parámetros del constructor y suponga que ya tiene implementadas correctamente las clases Tweet y Email. Justifique, brevemente, porqué ha seleccionado cada estructura de datos para los atributos. Se debe comprobar que el email contiene el carácter (@) y que el alias solo 
+contienenúmeros y/o letras. Programe una clase Utils que contenga funciones independientes para comprobar si el email es válido y si el alias es válido. En caso contrario, se deberá gestionar de forma adecuada la casuística.
+
+  b). Implemente, en UserAccount, un método que permita a un usuario seguir a otro. El método no debe devolver nada.
+    • Al ejecutar “user.follow(user2)”, el usuario user se convertirá en follower de user2.
+    • Añada, si lo necesita, métodos auxiliares (por ejemplo, para manejar los followers de user2).
+    • Gestione adecuadamente que un usuario no pueda seguir dos veces al mismo usuario. Si esto ocurre, se gestionará adecuadamente.
+
+  c). Implemente, en UserAccount, un método que permita a un usuario publicar un Tweet:
+    • Después de ejecutar el método “user.tweet(tweet1)”, se deberá actualizar adecuadamente el atributo tweets de user. Además, todos los followers de user habrán recibido el tweet1 en         su timeline.
+    • Añada, si lo necesita, métodos auxiliares (por ejemplo, para manejar el timeline de los
+      followers).
+
+  d). Implemente el método toString que únicamente muestre el nombre de usuario y el correo electrónico.
 
 
 
