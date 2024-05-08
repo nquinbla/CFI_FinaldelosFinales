@@ -1,7 +1,4 @@
-import A_CuentaUsuario.Cuenta_Usuario;
-import A_CuentaUsuario.Mensaje_Directo;
-import A_CuentaUsuario.Tweet;
-import A_CuentaUsuario.Utils;
+import A_CuentaUsuario.*;
 import B_Decoración.decoPanel;
 
 import javax.swing.*;
@@ -86,6 +83,25 @@ public class Main3 {
                     } catch (IllegalArgumentException ex) {
                         resultArea.append("Error: " + ex.getMessage() + "\n");
                     }
+                }
+            }
+        });
+        JButton retweetButton = new JButton("Hacer retweet");
+        JTextField retweetTextField = new JTextField(20);
+        panel.add(retweetTextField, BorderLayout.CENTER);
+        panel.add(retweetButton, BorderLayout.SOUTH);
+
+        retweetButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String mensaje = retweetTextField.getText();
+                Tweet tweetARetweetear = buscarTweet(mensaje);
+                if (tweetARetweetear == null) {
+                    JOptionPane.showMessageDialog(null, "Tweet no encontrado");
+                } else {
+                    Retweet retweet = new Retweet(mensaje, LocalDate.now(), currentUser, tweetARetweetear);
+                    currentUser.tweet(retweet);
+                    JOptionPane.showMessageDialog(null, "Has hecho retweet a: " + retweet.toString());
                 }
             }
         });
