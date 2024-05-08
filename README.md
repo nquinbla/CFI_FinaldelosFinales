@@ -1,11 +1,24 @@
 # CASO FINAL INTEGRADOR DE LOS FINALES
 Caso Final Integrador de los Finales de Nerea Quintanilla Blanco
 
-LINK ->
+LINK -> https://github.com/nquinbla/CFI_FinaldelosFinales.git
 
 ---
 ## ÍNDICE
 
+- [EJERCICIOS](#ejercicios)
+  - [EJERCICIO 1](#ejercicio-1)
+  - [EJERCICIO 2](#ejercicio-2)
+    - [APARTADO 2](#apartado-2)
+    - [APARTADO 3](#apartado-3)
+    - [APARTADO 4](#apartado-4)
+    - [APARTADO 5](#apartado-5)
+  - [EJERCICIO 3](#ejercicio-3)
+  - [EJERCICIO 4](#ejercicio-4)
+  - [EJERCICIO 5](#ejercicio-5)
+    - [MÓDULO 1](#módulo-1)
+    - [MÓDULO 2](#módulo-2)
+    - [MÓDULO 3](#módulo-3)
 
 ---
 ---
@@ -111,7 +124,7 @@ Escogo hacer los apartados 2, 3, 4 y 5 de los cinco proporcionados.
 
 ### [EJERCICIO 5] (2.5 + 1.5 + 1 puntos)
 
-#### [1] MÓDULO 1
+#### [1] MÓDULO 
 En la red social Twitter, cada usuario es propietario de una cuenta (UserAccount) en la que, básicamente, se especifica un alias (que cumple las funciones de identificador único) y un email de contacto. En la cuenta, además, se incluye el conjunto de tweets que el propietario va publicando a lo largo del tiempo.
 Como la cantidad de mensajes que maneja la red es inmensa, una característica original de Twitter es que cada usuario puede seleccionar la información que le interesa recibir. De esta manera, el propietario de una UserAccount puede convertirse en seguidor (follower) de otros usuarios, mostrando su interés en los tweets que ellos publiquen. Así, cada vez que un usuario publica un tweet, éste es incluido en el timeline de la UserAccount de cada uno de sus followers (es decir, el timeline se corresponde con el conjunto de tweets recibidos). Un usuario tiene también una lista de personas a las que sigue (following). En base a estas especificaciones se solicita que:
 
@@ -130,7 +143,7 @@ contienenúmeros y/o letras. Programe una clase Utils que contenga funciones ind
 
   d). Implemente el método toString que únicamente muestre el nombre de usuario y el correo electrónico.
 
-#### [2] MÓDULO 2
+#### [2] MÓDULO 
 En la red social Twitter, la unidad básica de información se denomina Tweet. Un Tweet es creado en un instante de tiempo concreto (time), contiene un mensaje (message) con un máximo de 140 caracteres de longitud y es publicado por un usuario (conocido como sender). Además, existen dos tipos de Tweet especiales:
 
   - DirectMessage: Los mensajes directos son Tweets que permiten comunicarse, de manera privada, a dos usuarios dentro de la red. Estos DirectMessage son como Tweets ya que contienen un       mensaje (message), son publicados por un emisor (sender) y son creados en un instante de tiempo determinado (time); la única diferencia es que incluyen a otro usuario como receptor        (receiver) del tweet.
@@ -138,6 +151,7 @@ En la red social Twitter, la unidad básica de información se denomina Tweet. U
 
 En base a estas especificaciones se solicita que:
 
+#### [3] MÓDULO 
 
 
 
