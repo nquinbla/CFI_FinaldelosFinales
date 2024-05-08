@@ -1,4 +1,7 @@
-import A_CuentaUsuario.*;
+import A_CuentaUsuario.Cuenta_Usuario;
+import A_CuentaUsuario.Mensaje_Directo;
+import A_CuentaUsuario.Tweet;
+import A_CuentaUsuario.Utils;
 import B_Decoración.decoPanel;
 
 import javax.swing.*;
@@ -50,20 +53,11 @@ public class Main3 {
         panel.add(scrollPane, BorderLayout.CENTER);
 
         JPanel bottomPanel = new B_Decoración.CustomPanel(Color.DARK_GRAY);
-        bottomPanel.setLayout(new BoxLayout(bottomPanel, BoxLayout.Y_AXIS)); // Añade esta línea
-
         JTextField tweetText = new JTextField(20);
         JButton tweetButton = new JButton("Publicar tweet");
-        JTextField retweetTextField = new JTextField(20);
-        JButton retweetButton = new JButton("Hacer retweet");
-
         bottomPanel.add(tweetText);
         bottomPanel.add(tweetButton);
-        bottomPanel.add(retweetTextField);
-        bottomPanel.add(retweetButton);
-
         panel.add(bottomPanel, BorderLayout.SOUTH);
-
 
         loadUserButton.addActionListener(new ActionListener() {
             @Override
@@ -96,23 +90,6 @@ public class Main3 {
             }
         });
 
-        panel.add(retweetTextField, BorderLayout.CENTER);
-        panel.add(retweetButton, BorderLayout.SOUTH);
-
-        retweetButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String mensaje = retweetTextField.getText();
-                Tweet tweetARetweetear = buscarTweet(mensaje);
-                if (tweetARetweetear == null) {
-                    JOptionPane.showMessageDialog(null, "Tweet no encontrado");
-                } else {
-                    Retweet retweet = new Retweet(mensaje, LocalDate.now(), currentUser, tweetARetweetear);
-                    currentUser.tweet(retweet);
-                    JOptionPane.showMessageDialog(null, "Has hecho retweet a: " + retweet.toString());
-                }
-            }
-        });
 
         sortButton.addActionListener(new ActionListener() {
             @Override
@@ -271,15 +248,5 @@ public class Main3 {
 
     private static void ordenarUsuariosPorEmail() {
         usuarios.sort(Comparator.comparing(Cuenta_Usuario::getEmail));
-    }
-    private static Tweet buscarTweet(String mensaje) {
-        for (Cuenta_Usuario usuario : usuarios) {
-            for (Tweet tweet : usuario.tweets) {
-                if (tweet.message.equals(mensaje)) {
-                    return tweet;
-                }
-            }
-        }
-        return null;
     }
 }

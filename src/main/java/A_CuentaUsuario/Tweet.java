@@ -3,7 +3,7 @@ package A_CuentaUsuario;
 import java.time.LocalDate;
 
 public class Tweet {
-    public String message;
+    protected String message;
     protected LocalDate time;
     protected Cuenta_Usuario sender;
 

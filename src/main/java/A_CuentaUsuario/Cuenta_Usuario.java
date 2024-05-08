@@ -6,7 +6,7 @@ public class Cuenta_Usuario {
      String alias;
     private String email;
     private List<Cuenta_Usuario> following;
-    public List<Tweet> tweets;
+    private List<Tweet> tweets;
     private List<Tweet> timeline;
 
     public Cuenta_Usuario(String alias, String email) {
