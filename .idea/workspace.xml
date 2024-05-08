@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21b304ed-0e3f-422b-b91e-18a22c6f2739" name="Changes" comment="main3 pt10" />
+    <list default="true" id="21b304ed-0e3f-422b-b91e-18a22c6f2739" name="Changes" comment="main3 pt10">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main3.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715156494141</updated>
-      <workItem from="1715156495211" duration="6371000" />
+      <workItem from="1715156495211" duration="6679000" />
     </task>
     <task id="LOCAL-00001" summary="[A] Cuenta de Usuario (Cuenta_Usuario) código">
       <option name="closed" value="true" />
@@ -280,7 +282,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715162884773</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="main3 pt10">
+      <option name="closed" value="true" />
+      <created>1715163018758</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1715163018758</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

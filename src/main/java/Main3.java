@@ -130,6 +130,24 @@ public class Main3 {
                 notificationsFrame.setSize(300, 200);
                 notificationsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 notificationsFrame.add(createButtonPanel(), BorderLayout.WEST);
+
+                JButton followButton = new JButton("Seguir a cuentas preestablecidas");
+                notificationsFrame.add(followButton, BorderLayout.SOUTH);
+
+                followButton.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        for (Cuenta_Usuario usuario : usuarios) {
+                            if (!currentUser.getAlias().equals(usuario.getAlias())) {
+                                currentUser.follow(usuario);
+                                usuario.follow(currentUser);
+                                JOptionPane.showMessageDialog(null, "¡Has seguido a " + usuario.getAlias() + "!");
+                                JOptionPane.showMessageDialog(null, "¡" + usuario.getAlias() + " también te ha seguido!");
+                            }
+                        }
+                    }
+                });
+
                 notificationsFrame.setVisible(true);
             }
         });
