@@ -18,10 +18,10 @@ public class Tweet {
 
     @Override
     public String toString() {
-        return "Tweet{" +
-                "message='" + message + '\'' +
-                ", time=" + time +
-                ", sender=" + sender +
+        return "Tweet:" +
+                "message:'" + message + '\'' +
+                ", time:" + time +
+                ", sender:" + sender +
                 '}';
     }
 }
