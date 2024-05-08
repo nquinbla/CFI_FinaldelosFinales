@@ -16,9 +16,9 @@ LINK -> https://github.com/nquinbla/CFI_FinaldelosFinales.git
   - [EJERCICIO 3](#ejercicio-3)
   - [EJERCICIO 4](#ejercicio-4)
   - [EJERCICIO 5](#ejercicio-5)
-    - [MÓDULO 1](#módulo-1)
-    - [MÓDULO 2](#módulo-2)
-    - [MÓDULO 3](#módulo-3)
+    - [MÓDULOS](#módulos)
+    - [MÉTODOS](#métodos)
+    - [FUNCIONALIDAD](#funcionalidad)
 
 ---
 ---
@@ -127,13 +127,13 @@ Escogo hacer los apartados 2, 3, 4 y 5 de los cinco proporcionados.
 
 ### [EJERCICIO 5] 
 
-#### [1] MÓDULO 
+#### MÓDULOS
+- `Cuenta_Usuario`
+
+#### MÉTODOS 
 
 
-#### [2] MÓDULO 
-
-
-#### [3] MÓDULO 
+#### FUNCIONALIDAD 
 
 
 
