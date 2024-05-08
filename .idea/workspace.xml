@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21b304ed-0e3f-422b-b91e-18a22c6f2739" name="Changes" comment="main3 pt3">
-      <change beforePath="$PROJECT_DIR$/src/main/java/B_Decoración/decoPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/B_Decoración/decoPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main3.java" afterDir="false" />
-    </list>
+    <list default="true" id="21b304ed-0e3f-422b-b91e-18a22c6f2739" name="Changes" comment="main3 pt6 más ajustes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715156494141</updated>
-      <workItem from="1715156495211" duration="4114000" />
+      <workItem from="1715156495211" duration="4497000" />
     </task>
     <task id="LOCAL-00001" summary="[A] Cuenta de Usuario (Cuenta_Usuario) código">
       <option name="closed" value="true" />
@@ -203,7 +200,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715160410170</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="main3 pt5 más ajustes">
+      <option name="closed" value="true" />
+      <created>1715160676909</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1715160676909</updated>
+    </task>
+    <task id="LOCAL-00018" summary="main3 pt6 más ajustes">
+      <option name="closed" value="true" />
+      <created>1715160917895</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1715160917895</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +238,8 @@
     <MESSAGE value="metemos cositas" />
     <MESSAGE value="main3 para variar" />
     <MESSAGE value="main3 pt3" />
-    <option name="LAST_COMMIT_MESSAGE" value="main3 pt3" />
+    <MESSAGE value="main3 pt5 más ajustes" />
+    <MESSAGE value="main3 pt6 más ajustes" />
+    <option name="LAST_COMMIT_MESSAGE" value="main3 pt6 más ajustes" />
   </component>
 </project>

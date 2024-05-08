@@ -33,6 +33,7 @@ public class Main3 {
     }
 
     private static void placeComponents(JPanel panel) {
+        panel.add(createButtonPanel(), BorderLayout.WEST);
 
         // Panel para los botones de imagen
         JPanel imageButtonPanel = new JPanel();
