@@ -13,6 +13,6 @@ public class decoPanel extends JSeparator {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         g.setColor(Color.GRAY);
-        g.drawLine(getWidth() / 2, 0, getWidth() / 2, getHeight());
+        g.drawLine(1, 0, 1, getHeight());
     }
 }

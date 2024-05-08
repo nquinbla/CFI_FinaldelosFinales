@@ -40,11 +40,10 @@ public class Main3 {
         imageButtonPanel.setBackground(Color.GRAY);
 
         // Cargar las imágenes
-        ImageIcon icon1 = new ImageIcon("hogar.png");
-        ImageIcon icon2 = new ImageIcon("campana.png");
-        ImageIcon icon3 = new ImageIcon("sobre.png");
-        ImageIcon icon4 = new ImageIcon("usuario.png");
-
+        ImageIcon icon1 = new ImageIcon(new ImageIcon("src/main/resources/hogar.png").getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT));
+        ImageIcon icon2 = new ImageIcon(new ImageIcon("src/main/resources/campana.png").getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT));
+        ImageIcon icon3 = new ImageIcon(new ImageIcon("src/main/resources/sobre.png").getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT));
+        ImageIcon icon4 = new ImageIcon(new ImageIcon("src/main/resources/usuario.png").getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT));
 
         // Crear JButtons para las imágenes
         JButton button1 = new JButton(icon1);
@@ -52,7 +51,7 @@ public class Main3 {
         JButton button3 = new JButton(icon3);
         JButton button4 = new JButton(icon4);
 
-        Dimension buttonSize = new Dimension(100, 100);
+        Dimension buttonSize = new Dimension(50, 50);
         button1.setPreferredSize(buttonSize);
         button2.setPreferredSize(buttonSize);
         button3.setPreferredSize(buttonSize);
@@ -66,6 +65,7 @@ public class Main3 {
 
         panel.add(imageButtonPanel, BorderLayout.WEST); // Añadir el panel de botones de imagen al panel principal
         decoPanel decoPanel = new decoPanel();
+        decoPanel.setPreferredSize(new Dimension(2, decoPanel.getHeight()));
         panel.add(decoPanel, BorderLayout.CENTER);
 
 
