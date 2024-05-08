@@ -36,7 +36,7 @@ public class Cuenta_Usuario {
 
     public void tweet(Tweet tweet) {
         this.tweets.add(tweet);
-        for (UserAccount user : following) {
+        for (Cuenta_Usuario user : following) {
             user.updateTimeline(tweet);
         }
     }
