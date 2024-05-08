@@ -2,6 +2,7 @@ import A_CuentaUsuario.Cuenta_Usuario;
 import A_CuentaUsuario.Tweet;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.time.LocalDate;
@@ -14,6 +15,8 @@ public class Main {
 
     public Main(Cuenta_Usuario currentUser) {
         panelMain = new JPanel();
+        panelMain.setPreferredSize(new Dimension(800, 500));
+
 
         this.currentUser = currentUser;
         tweetButton = new JButton();
