@@ -13,16 +13,20 @@ public class Main {
     private Cuenta_Usuario currentUser;
 
     public Main(Cuenta_Usuario currentUser) {
+        panelMain = new JPanel();
+
         this.currentUser = currentUser;
+        tweetButton = new JButton();
         tweetButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String message = tweetTextField.getText();
-                try {
-                    currentUser.tweet(new Tweet(message, LocalDate.now(), currentUser));
-                    JOptionPane.showMessageDialog(null, "Tweet posted successfully");
-                } catch (IllegalArgumentException ex) {
-                    JOptionPane.showMessageDialog(null, "Error: " + ex.getMessage());
+                String tweetMessage = tweetTextField.getText();
+                if (!tweetMessage.isEmpty()) {
+                    Tweet newTweet = new Tweet(tweetMessage, LocalDate.now(), currentUser);
+                    currentUser.tweet(newTweet);
+                    tweetTextField.setText(""); // Clear the text field after tweeting
+                } else {
+                    JOptionPane.showMessageDialog(null, "Please enter a tweet message.");
                 }
             }
         });
