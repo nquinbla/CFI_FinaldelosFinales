@@ -50,17 +50,19 @@ public class Main3 {
         panel.add(scrollPane, BorderLayout.CENTER);
 
         JPanel bottomPanel = new B_Decoración.CustomPanel(Color.DARK_GRAY);
+        bottomPanel.setLayout(new BoxLayout(bottomPanel, BoxLayout.Y_AXIS)); // Añade esta línea
+
         JTextField tweetText = new JTextField(20);
         JButton tweetButton = new JButton("Publicar tweet");
-        panel.add(bottomPanel, BorderLayout.SOUTH);
         JTextField retweetTextField = new JTextField(20);
         JButton retweetButton = new JButton("Hacer retweet");
-        panel.add(bottomPanel, BorderLayout.SOUTH);
 
         bottomPanel.add(tweetText);
         bottomPanel.add(tweetButton);
         bottomPanel.add(retweetTextField);
         bottomPanel.add(retweetButton);
+
+        panel.add(bottomPanel, BorderLayout.SOUTH);
 
 
         loadUserButton.addActionListener(new ActionListener() {
