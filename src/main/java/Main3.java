@@ -264,4 +264,14 @@ public class Main3 {
     private static void ordenarUsuariosPorEmail() {
         usuarios.sort(Comparator.comparing(Cuenta_Usuario::getEmail));
     }
+    private static Tweet buscarTweet(String mensaje) {
+        for (Cuenta_Usuario usuario : usuarios) {
+            for (Tweet tweet : usuario.tweets) {
+                if (tweet.message.equals(mensaje)) {
+                    return tweet;
+                }
+            }
+        }
+        return null;
+    }
 }

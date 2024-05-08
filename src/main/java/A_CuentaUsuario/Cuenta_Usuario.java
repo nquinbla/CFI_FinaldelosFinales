@@ -3,10 +3,10 @@ package A_CuentaUsuario;
 import java.util.*;
 
 public class Cuenta_Usuario {
-    private String alias;
+     String alias;
     private String email;
     private List<Cuenta_Usuario> following;
-    private List<Tweet> tweets;
+    public List<Tweet> tweets;
     private List<Tweet> timeline;
 
     public Cuenta_Usuario(String alias, String email) {
