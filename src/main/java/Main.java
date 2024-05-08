@@ -17,7 +17,6 @@ public class Main {
         panelMain = new JPanel();
         panelMain.setPreferredSize(new Dimension(800, 500));
 
-
         this.currentUser = currentUser;
         tweetButton = new JButton();
         tweetButton.addActionListener(new ActionListener() {
