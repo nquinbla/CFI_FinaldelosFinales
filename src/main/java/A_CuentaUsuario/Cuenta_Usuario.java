@@ -23,6 +23,10 @@ public class Cuenta_Usuario {
         this.timeline = new ArrayList<>();
     }
 
+    public String getAlias() { return alias; }
+
+    public String getEmail() { return email; }
+
     public void follow(Cuenta_Usuario user) {
         if (!following.contains(user)) {
             following.add(user);
