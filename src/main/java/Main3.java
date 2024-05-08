@@ -131,19 +131,23 @@ public class Main3 {
                 notificationsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 notificationsFrame.add(createButtonPanel(), BorderLayout.WEST);
 
-                JButton followButton = new JButton("Seguir a cuentas preestablecidas");
-                notificationsFrame.add(followButton, BorderLayout.SOUTH);
+                JButton button2 = new JButton("Seguir a usuario");
+                JTextField followTextField = new JTextField(20);
+                notificationsFrame.add(followTextField, BorderLayout.CENTER);
+                notificationsFrame.add(button2, BorderLayout.SOUTH);
 
-                followButton.addActionListener(new ActionListener() {
+                button2.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        for (Cuenta_Usuario usuario : usuarios) {
-                            if (!currentUser.getAlias().equals(usuario.getAlias())) {
-                                currentUser.follow(usuario);
-                                usuario.follow(currentUser);
-                                JOptionPane.showMessageDialog(null, "¡Has seguido a " + usuario.getAlias() + "!");
-                                JOptionPane.showMessageDialog(null, "¡" + usuario.getAlias() + " también te ha seguido!");
-                            }
+                        String alias = followTextField.getText();
+                        Cuenta_Usuario usuarioASeguir = buscarUsuario(alias);
+                        if (usuarioASeguir == null) {
+                            JOptionPane.showMessageDialog(null, "Usuario no encontrado");
+                        } else {
+                            currentUser.follow(usuarioASeguir);
+                            usuarioASeguir.follow(currentUser);
+                            JOptionPane.showMessageDialog(null, "¡Has seguido a " + usuarioASeguir.getAlias() + "!");
+                            JOptionPane.showMessageDialog(null, "¡" + usuarioASeguir.getAlias() + " también te ha seguido!");
                         }
                     }
                 });
