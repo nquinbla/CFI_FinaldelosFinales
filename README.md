@@ -85,7 +85,27 @@ Escogo hacer los apartados 2, 3, 4 y 5 de los cinco proporcionados.
 ---
 
 ### EJERCICIO 4 (1.5 puntos)
-
+  Te lo resuelvo aquí y además también estará implemetado en una clase `Ejercicio_4':
+```
+1  public class Ejercicio_4 {
+2    public static void main(String[] args) {
+3        int number = 102;
+4        int sum = sumOfDigits(number);
+5        System.out.println(sum);
+6    }
+7    public static int sumOfDigits(int n) {
+8        if (n < 10) {
+9            return n;
+10        } else {
+11            return n % 10 + sumOfDigits(n / 10);
+12        }
+13    }
+14 }
+```
+  Se esta empleando el método de recursividad de cola. Lo podemos observar ya que la última operación realizada en la función antes de devolver un valor en la líena 11 (return n % 10 +
+  sumOfDigits(n / 10);). 
+  La complejidad computacional del algoritmo va creciendo de manera proporcional al número de dígitos de n. Por ejemplo, la función `sumOfDigits` recorre los dígitos del n y suma cada uno
+  de ellos. La cantidad de llamadas recursivas esta determinada por el número de dígitos de n.
 
 
 
