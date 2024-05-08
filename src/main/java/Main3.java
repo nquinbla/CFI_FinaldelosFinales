@@ -18,6 +18,7 @@ public class Main3 {
     private static List<Cuenta_Usuario> usuarios = new ArrayList<>();
     private static Cuenta_Usuario currentUser;
 
+
     public static void main(String[] args) {
         cargarUsuarios();
 
@@ -196,8 +197,6 @@ public class Main3 {
             }
         });
 
-        imageButtonPanel.add(button5);
-
         imageButtonPanel.add(button1);
         imageButtonPanel.add(button2);
         imageButtonPanel.add(button3);
@@ -208,18 +207,11 @@ public class Main3 {
     }
 
     private static void cargarUsuarios() {
-        try {
-            Scanner scanner = new Scanner(new File("usuarios.txt"));
-            while (scanner.hasNextLine()) {
-                String linea = scanner.nextLine();
-                String[] partes = linea.split(",");
-                String alias = partes[0];
-                String email = partes[1];
-                usuarios.add(new Cuenta_Usuario(alias, email));
-            }
-        } catch (FileNotFoundException e) {
-            System.out.println("Error al cargar usuarios: " + e.getMessage());
-        }
+        usuarios.add(new Cuenta_Usuario("rubénelmejor", "ruben1@email.com"));
+        usuarios.add(new Cuenta_Usuario("nereaquintanilla_", "nquinbla@email.com"));
+        usuarios.add(new Cuenta_Usuario("extremodurofan", "extremoduro@email.com"));
+        usuarios.add(new Cuenta_Usuario("tartadequesolamejor", "tartaqueso@email.com"));
+        usuarios.add(new Cuenta_Usuario("rockconñ", "rockespañol@email.com"));
     }
 
     private static Cuenta_Usuario buscarUsuario(String alias) {
