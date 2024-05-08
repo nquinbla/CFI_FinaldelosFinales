@@ -7,7 +7,7 @@ LINK -> https://github.com/nquinbla/CFI_FinaldelosFinales.git
 ## ÍNDICE
 
 - [EJERCICIOS](#ejercicios)
-  - [EJERCICIO 1 (0.5 puntos)](#ejercicio-1-(0.5-puntos))
+  - [EJERCICIO 1](#ejercicio-1)
   - [EJERCICIO 2](#ejercicio-2)
     - [APARTADO 2](#apartado-2)
     - [APARTADO 3](#apartado-3)
@@ -25,7 +25,7 @@ LINK -> https://github.com/nquinbla/CFI_FinaldelosFinales.git
 
 ## EJERCICIOS
 
-### [EJERCICIO 1] (0.5 puntos)
+### [EJERCICIO 1] 
   1). -> b) Debemos establecer la visibilidad más restrictiva (por ejemplo, privada) en los atributos de una clase. Así, cualquier software que utilice nuestro objeto, sólo accederá al estado de los objetos mediante los métodos que le hayamos permitido utilizar.
 
   2). -> b) Falso
@@ -36,9 +36,10 @@ LINK -> https://github.com/nquinbla/CFI_FinaldelosFinales.git
 
   5). ->
 
+(0.5 puntos)
 ---
 
-### [EJERCICIO 2] (2 puntos)
+### [EJERCICIO 2]
 Escogo hacer los apartados 2, 3, 4 y 5 de los cinco proporcionados.
 
 #### 2). APARTADO 2
@@ -95,9 +96,10 @@ Escogo hacer los apartados 2, 3, 4 y 5 de los cinco proporcionados.
 
   * Caso Recursivo: si `b` es <0, la función realiza una llamada recursiva, disminuyendo poco a poco el valor de este hasta que alcance el 0 o >0, en cada llamada se multiplica `a` por el resultado de la llamada recursiva con `b`, disminuyendo en 1.
 
+(2 puntos)
 ---
 
-### [EJERCICIO 4] (1.5 puntos)
+### [EJERCICIO 4]
   Te lo resuelvo aquí y además también estará implemetado en una clase `Ejercicio_4':
 ```
 1  public class Ejercicio_4 {
@@ -120,9 +122,10 @@ Escogo hacer los apartados 2, 3, 4 y 5 de los cinco proporcionados.
   La complejidad computacional del algoritmo va creciendo de manera proporcional al número de dígitos de n. Por ejemplo, la función `sumOfDigits` recorre los dígitos del n y suma cada uno
   de ellos. La cantidad de llamadas recursivas esta determinada por el número de dígitos de n.
 
+(1.5 puntos)
 ---
 
-### [EJERCICIO 5] (2.5 + 1.5 + 1 puntos)
+### [EJERCICIO 5] 
 
 #### [1] MÓDULO 
 En la red social Twitter, cada usuario es propietario de una cuenta (UserAccount) en la que, básicamente, se especifica un alias (que cumple las funciones de identificador único) y un email de contacto. En la cuenta, además, se incluye el conjunto de tweets que el propietario va publicando a lo largo del tiempo.
@@ -153,5 +156,10 @@ En base a estas especificaciones se solicita que:
 
 #### [3] MÓDULO 
 
+
+
+
+
+(2.5 + 1.5 + 1 puntos)
 
 
